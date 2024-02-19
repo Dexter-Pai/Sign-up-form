@@ -64,7 +64,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     background-color:rgb(232, 235, 235);
 }
 
@@ -78,4 +77,10 @@ h1 {
 
 .main {
     flex: 4 0 4rem;
+}
+
+.formbox {
+    background-color: white;
+    padding: 20px;
+    box-shadow: darkgrey 1px 1px 10px;
 }
