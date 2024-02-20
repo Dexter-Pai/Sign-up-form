@@ -9,48 +9,60 @@
 </head>
 <body>
     <div class="screen">
-        <aside class="sideMenu">            
+        <aside class="sideMenu">
+            <p class="logo"><img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin Logo" srcset="">ODIN</p>
+            <footer><a href="https://github.com/Dexter-Pai?tab=overview&from=2024-02-01&to=2024-02-18">&copy; <span>Dexter Pai 2024</span></a></footer>
         </aside>
         <main class="main">
-            <head>
+            <header class="headDescription">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started.</p>
-                <p>You know you want to.</p>
-            </head>
+                <p>You <i>know</i> you want to.</p>
+                <br>
+                <br>
+            </header>
             <form action="#" method="post">
                 <section class="formbox">
                     <header>
-                        <h1>Let's Do This</h1>
+                        <h1>Let's Do This!</h1>
                     </header>
                     <ul>
                         <li>
                             <label for="firstname">First Name</label>
+                            <br>
                             <input type="text" name="firstname" id="fname" placeholder="John" required>
                         </li>
                         <li>
                             <label for="lastname">Last Name</label>
+                            <br>
                             <input type="text" name="lastname" id="lname" placeholder="Doe" required>
                         </li>
                         <li>
                             <label for="email">Email</label>
+                            <br>
                             <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
                         </li>
                         <li>
                             <label for="ph">Phone Number</label>
-                            <input type="tel" name="phone" id="ph" placeholder="(999) 999-9999" required>
+                            <br>
+                            <input type="tel" name="phone" id="ph" placeholder="(999) 999-9999" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" required>
                         </li>
                         <li>
                             <label for="pwd">Password</label>
+                            <br>
                             <input type="password" name="password" required id="pwd">
+                            <br>
+                            <label class="pwdNoMatch" for="pwd">* Passwords do not match</label>
                         </li>
                         <li>
                             <label for="confirmpwd">Confirm Password</label>
-                            <input type="password" name="confirmPassword" id="confirmpwd">
+                            <br>
+                            <input type="password" name="confirmPassword" id="confirmpwd" required>
                         </li>
                     </ul>
                 </section>
                 <button type="submit">Create Account</button>
                 <footer>
-                    <p>Already have an acccount?<a href="#" target="_blank" rel="noopener noreferrer">Log In</a></p>
+                    <p>Already have an acccount? <a href="#" target="_blank" rel="noopener noreferrer">Log In</a></p>
                 </footer>
             </form>
         </main>
